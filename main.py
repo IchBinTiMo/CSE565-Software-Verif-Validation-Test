@@ -22,10 +22,3 @@ def heapsort(arr):
         arr[0], arr[i] = arr[i], arr[0]
         heapify(arr, i, 0)
     return arr
-
-# Example usage
-if __name__ == "__main__":
-    data = [4, 10, 3, 5, 1]
-    print("Original:", data)
-    sorted_data = heapsort(data.copy())
-    print("Sorted:", sorted_data)
